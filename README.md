@@ -12,11 +12,9 @@ It's based on Qcubed alpha 3
 
 1. create web page folder in htdocs , download composer 
 and make installation of qcubed alpha 3 
-
-- configure composer.json with these lines:
-
-  > 
-  {
+	- configure composer.json with these lines:
+	  > 
+ 	 {
           "repositories": [
           {
           "type": "vcs",
@@ -28,28 +26,25 @@ and make installation of qcubed alpha 3
           "qcubed/framework": "dev-alpha-3.0"
            },
           "minimum-stability": "dev"
-}
+	}
 
-- php composer.phar install
-
+	- php composer.phar install
 
 2. Download qcubed-new-project-sample  an unzip to web page root folder
 with this structure:
-> - Web_page_folder
-      -  qcubed-new-project-sample
-          - app
-          - public
-          - installation
-      -  vendor
+
+	> - Web_page_folder
+      	-  qcubed-new-project-sample
+         	- app
+            - public
+          	- installation
+     	 -  vendor
             - qcubed ..
             - ....
             
 3. **Open browser to point to  page like**
 
 http://localhost/Web_page/public/index.php/
-
-
-
 
 
 
