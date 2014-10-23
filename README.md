@@ -12,7 +12,7 @@ Installation instructions
 
  
 
- 1. Create web page folder in htdocs , download composer and make nstallation of qcubed alpha 3
+ 1. Create web page folder in htdocs , download composer and make installation of qcubed alpha 3
 	      
 	      -  configure composer.json with these lines:
 			     {
