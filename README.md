@@ -40,6 +40,14 @@ with this structure:
             	- qcubed ..
             	- ....
 
+-Web_page_folder
+	qcubed-new-project-sample
+	    app
+    	public
+    	installation
+    vandor
+    	qcubed /...
+        ...
 
             
 3. **Open browser to point to  page like**
