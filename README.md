@@ -18,14 +18,20 @@ and make installation of qcubed alpha 3
       {
           "repositories": [
           {
+          
           "type": "vcs",
           "url": "https://github.com/qcubed/framework"
+          
           }
           ],
+          
           "require": {
+          
           "php": ">=5.3.0",
           "qcubed/framework": "dev-alpha-3.0"
+          
           },
+          
           "minimum-stability": "dev"
 }
 
