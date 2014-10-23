@@ -4,8 +4,6 @@ First version released  23.10.2014
 
 =========================
 
-## New basic qcubed project
-
 It's based on Qcubed alpha 3 
 
 **Installation instructions**
