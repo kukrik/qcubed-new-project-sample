@@ -1,0 +1,24 @@
+ Options +FollowSymLinks
+<IfModule mod_rewrite.c>
+#  DirectoryIndex index.php
+
+RewriteEngine On
+
+Rewritebase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+   # RewriteRule ^(test|skin|stylesheets|images|javascripts|favicon|robots\.txt|index\.php) - [L]
+   # RewriteRule ^([^/]+)/?$ index.php?clip=$1
+
+RewriteCond $1 !^(index\.php)
+RewriteRule ^(.*)$ /public/index.php/$1 [L] 
+
+
+# protect vendor an app folders by direct access
+# RewriteRule ^vendor($|/|/.*|./*) – [L,R=404]
+# RewriteRule ^app($|/|/*|/.*) – [L,R=404]
+
+
+</IfModule>
