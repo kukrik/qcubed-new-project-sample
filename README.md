@@ -1,7 +1,6 @@
 ## qcubed-new-project-sample
 
-
-## First version released  23.10.2014
+First version released  23.10.2014
 
 =========================
 
