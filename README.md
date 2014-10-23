@@ -1,15 +1,15 @@
-qcubed-new-project-sample 
+## qcubed-new-project-sample
 
 
-First version released  23.10.2014
+## First version released  23.10.2014
 
 =========================
 
-New basic qcubed project 
+## New basic qcubed project
 
 It's based on Qcubed alpha 3 
 
-Installation instructions
+**Installation instructions**
 
 1. create web page folder in htdocs , download composer 
 and make installation of qcubed alpha 3 
@@ -43,12 +43,13 @@ with this structure
             - ....
             
 
-Open browser to point to  page like 
+**Open browser to point to  page like**
 
 http://localhost/Web_page/public/index.php/
 
 
-To do:
+## To do:
 installation file for 
 creating db , set project title , 
-authentication module , editing some configuration.php variables
+authentication module , editing some configuration.php variables ,
+better mod_rewrite and security settings .
