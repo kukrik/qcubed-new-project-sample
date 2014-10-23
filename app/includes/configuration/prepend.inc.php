@@ -61,8 +61,8 @@
 					// TODO: Run any custom autoloading functionality (if any) here...
                                             // Transform a class name that looks like "ControllerAction" to "/controller/action"
                                            $strClassPath = preg_replace_callback("/[A-Z]+/", function ($matches) { return strtolower(DIRECTORY_SEPARATOR .$matches[0]); },  $strClassName);
-                                           $strFilePath = sprintf('%s%s.class.php', __PROJECT__. '/controller', $strClassPath);
-                                                if (file_exists($strFilePath = sprintf('%s%s.class.php', __PROJECT__. '/controller', $strClassPath))) {
+                                           $strFilePath = sprintf('%s%s.class.php', __PROJECT__. '/app/controller', $strClassPath);
+                                                if (file_exists($strFilePath = sprintf('%s%s.class.php', __PROJECT__. '/app/controller', $strClassPath))) {
                                                 require($strFilePath);
                                             }
 				}
@@ -196,12 +196,12 @@
 		}
 
 		// Initialize I18n if QApplication::$LanguageCode is set
-               // $lang=  QApplication::$LanguageCode ;
+
 		if (QApplication::$LanguageCode){
 			QI18n::Initialize();
 //		} elseif ( isset($_SESSION['User'])){                                
-//                     $objUser = unserialize($_SESSION['User']);    
-//                     QApplication::$CountryCode = $objUser->Countrycode ;
+//                   $objUser = unserialize($_SESSION['User']);    
+//                   QApplication::$CountryCode = $objUser->Countrycode ;
 //		     QApplication::$LanguageCode = $objUser->Langcode ;
 //		     QI18n::Initialize();
                 }
