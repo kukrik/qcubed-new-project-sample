@@ -37,7 +37,7 @@ and make installation of qcubed alpha 3
 2. Download qcubed-new-project-sample  an unzip to web page root folder
 with this structure
 - Web_page_folder
-      -  qcubed-new-project-sample
+     > -  qcubed-new-project-sample
           - app
           - public
           - installation
