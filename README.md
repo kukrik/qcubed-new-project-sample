@@ -32,13 +32,15 @@ and make installation of qcubed alpha 3
 with this structure:
 
 	> - Web_page_folder
-      	-  qcubed-new-project-sample
-         	- app
-            - public
-          	- installation
-     	 -  vendor
-            - qcubed ..
-            - ....
+    		- qcubed-new-project-sample
+         		- app
+            	- public
+          		- installation
+			- vendor
+            	- qcubed ..
+            	- ....
+
+
             
 3. **Open browser to point to  page like**
 
