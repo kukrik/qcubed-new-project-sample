@@ -33,8 +33,7 @@ and make installation of qcubed alpha 3
 - php composer.phar install
 
 
-
-3. Download qcubed-new-project-sample  an unzip to web page root folder
+2. Download qcubed-new-project-sample  an unzip to web page root folder
 with this structure:
 > - Web_page_folder
       -  qcubed-new-project-sample
@@ -44,10 +43,14 @@ with this structure:
       -  vendor
             - qcubed ..
             - ....
-
-**Open browser to point to  page like**
+            
+3. **Open browser to point to  page like**
 
 http://localhost/Web_page/public/index.php/
+
+
+
+
 
 
 ## To do:
