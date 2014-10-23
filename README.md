@@ -15,12 +15,12 @@ and make installation of qcubed alpha 3
 
 - configure composer.json with these lines:
 
-  > {
+  > 
+  {
           "repositories": [
           {
-                    "type": "vcs",
+          "type": "vcs",
           "url": "https://github.com/qcubed/framework"
-          
           }
           ],
           "require": {
