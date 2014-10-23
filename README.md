@@ -11,20 +11,19 @@ It's based on Qcubed alpha 3
 1. create web page folder in htdocs , download composer 
 and make installation of qcubed alpha 3 
 	- configure composer.json with these lines:
-	  > 
- 	 \{
-          "repositories": [
-          {
-          "type": "vcs",
-          "url": "https://github.com/qcubed/framework"
-          }
-          ],
-          "require": {
-          "php": "=5.3.0",
-          "qcubed/framework": "dev-alpha-3.0"
-           },
-          "minimum-stability": "dev"
-	\}
+	  	 {
+        	 "repositories": [
+          	{
+          	"type": "vcs",
+          	"url": "https://github.com/qcubed/framework"
+          	}
+          	],
+          	"require": {
+          	"php": "=5.3.0",
+          	"qcubed/framework": "dev-alpha-3.0"
+           	},
+          	"minimum-stability": "dev"
+		}
 
 	- php composer.phar install
 
