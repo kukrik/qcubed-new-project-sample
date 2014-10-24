@@ -16,7 +16,7 @@ RewriteCond $1 !^(index\.php)
 RewriteRule ^(.*)$ /index.php/$1 [L] 
 
 
-# protect vendor an app folders by direct access
+# protect vendor an app folders by direct access if they are relative to public folder
 # RewriteRule ^vendor($|/|/.*|./*) – [L,R=404]
 # RewriteRule ^app($|/|/*|/.*) – [L,R=404]
 

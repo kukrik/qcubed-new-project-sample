@@ -107,14 +107,21 @@
                             * Using PathInfo(), You could use query strings instead depending on your htaccess file.
                             */
                            public static function Dispatcher(){
-                               $strController = QApplication::PathInfo(0);
-                               
+                               //  $_SERVER['PATH_INFO'] isn't working always on shared hosting , so using $_SERVER['ORIG_PATH_INFO'] as we are using mod_rewrite
+                               //$strController = QApplication::PathInfo(0);
+				if (isset($_SERVER['PATH_INFO'])) {
+					$strController  = trim($_SERVER['PATH_INFO'], '/');
+					} elseif (isset($_SERVER['ORIG_PATH_INFO'])) {
+					$strController  = trim(str_replace($_SERVER['SCRIPT_NAME'], '', $_SERVER['ORIG_PATH_INFO']), '/');
+					} else {
+					$strController  = '';
+				}
                                // Custom home page
                                if (!$strController ){
                                    $strClassName = 'Index';
                                }
                                // If there is a controller, but no action ( We don't use actions only get and post parameters)
-                               elseif (ctype_alpha($strController) && QApplication::PathInfo(1)=='' ) {
+                               elseif (ctype_alpha($strController) /*&& QApplication::PathInfo(1)==''*/ ) {
                                    $strClassName = ucfirst(strtolower($strController));
                                }
                                // In all other situations, show a custom 404
