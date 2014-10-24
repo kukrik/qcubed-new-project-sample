@@ -4,7 +4,7 @@
 
 RewriteEngine On
 
-Rewritebase /
+Rewritebase /frameworks/qcubed-alpha-3.0/qcubed-new-project-sample/public/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -13,7 +13,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
    # RewriteRule ^([^/]+)/?$ index.php?clip=$1
 
 RewriteCond $1 !^(index\.php)
-RewriteRule ^(.*)$ /index.php/$1 [L] 
+RewriteRule ^(.*)$ index.php/$1 [L] 
 
 
 # protect vendor an app folders by direct access if they are relative to public folder
