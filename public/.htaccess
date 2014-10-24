@@ -4,7 +4,7 @@
 
 RewriteEngine On
 
-Rewritebase /frameworks/qcubed-alpha-3.0/qcubed-new-project-sample/public/
+Rewritebase /
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
