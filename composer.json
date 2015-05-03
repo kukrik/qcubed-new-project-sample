@@ -11,7 +11,7 @@
     },
 	"require": {
 		"php": ">=5.4.0",
-		"qcubed/framework": "alpha-3.0"
+		"qcubed/framework": "dev-alpha-3.0"
 	},
 	"require-dev": {
 	
