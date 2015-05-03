@@ -9,9 +9,9 @@
                 <?php } else {?>
                              <title><?php _p(__PROJECT_NAME__) ;?></title>
                 <?php } ?>
-		<style type="text/css">@import url("<?php _p(__VIRTUAL_DIRECTORY__ . __APP_CSS_ASSETS__); ?>/styles.css");</style>
-                <style type="text/css">@import url("<?php _p(__VIRTUAL_DIRECTORY__ . __APP_CSS_ASSETS__); ?>/bootstrap.min.css");</style>
-                <style type="text/css">@import url("<?php _p(__VIRTUAL_DIRECTORY__ . __APP_CSS_ASSETS__); ?>/bootstrap-admin.min.css");</style>
+		<style type="text/css">@import url("<?php _p(__VIRTUAL_DIRECTORY__ . __APP_CSS_ASSETS__,false); ?>/styles.css");</style>
+                <style type="text/css">@import url("<?php _p(__VIRTUAL_DIRECTORY__ . __APP_CSS_ASSETS__, false); ?>/bootstrap.min.css");</style>
+                <style type="text/css">@import url("<?php _p(__VIRTUAL_DIRECTORY__ . __APP_CSS_ASSETS__, false); ?>/bootstrap-admin.min.css");</style>
 	</head>
 	<body>
             <div role="navigation" class="navbar navbar-default navbar-static-top">
