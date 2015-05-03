@@ -1,0 +1,19 @@
+
+{
+	"name": "vmakre/qcubed-new-project-sample",
+	"description": "QCubed is a PHP framework for rapid web development. Building on top of jQuery, with OOP at its core, QCubed provides a powerful solution for building database-driven Web 2.0 applications.",
+	"keywords": ["php", "framework", "jquery"],
+	"homepage": "https://github.com/vmakre/qcubed-new-project-sample",
+	"type": "project",
+	"license": "free",
+	"support": {
+        "source": "https://github.com/vmakre/qcubed-new-project-sample"
+    },
+	"require": {
+		"php": ">=5.4.0",
+		"qcubed/framework": "dev-alpha-3.0"
+	},
+	"require-dev": {
+	
+	}
+}
